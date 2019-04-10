@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#5959AB" >
+
+
+
+    <TextView
+        android:id="@+id/Koszt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Ilosc"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="-111dp"
+        android:text="Koszt zł/litr: "
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/Koszt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/Ilosc"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        android:layout_above="@+id/Km"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginBottom="-155dp"
+        android:text="Ilosc: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Ilosc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="215dp"
+        android:text="Dodaj" />
+
+    <TextView
+        android:id="@+id/Km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginBottom="11dp"
+        android:text="Stan licznika: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Km1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="47dp"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_vi"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+android:layout_marginLeft="90dp"
+        android:text="Resetuj" />
+
+    <TextView
+    android:id="@+id/podlicz"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="600dp"
+    android:layout_marginLeft="27dp"
+    android:inputType="numberDecimal"
+    android:text="Suma: "
+    android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/dys"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="600dp"
+        android:inputType="numberDecimal"
+        android:text="Przejechane: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/wynikkoszt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="600dp"
+        android:text=""
+        android:layout_marginLeft="70dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/wynikdystans"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="600dp"
+        android:text=""
+        android:layout_marginLeft="280dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="260dp"
+        android:text="Data: " />
+
+    <TextView
+        android:id="@+id/Cena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="260dp"
+        android:text="Cena: " />
+
+    <TextView
+        android:id="@+id/Ilosc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="260dp"
+        android:text="Ilość: " />
+
+    <TextView
+        android:id="@+id/Koszt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="260dp"
+        android:text="Koszt:" />
+
+    <TextView
+        android:id="@+id/Licznik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="284dp"
+        android:layout_marginTop="260dp"
+        android:text="Stan licznika:" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="675dp">
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
